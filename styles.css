@@ -40,3 +40,15 @@ a:hover {
   text-decoration: none;
   color: black;
 }
+
+a{
+  
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  
+}
+
+.white{
+  color:white;
+}
