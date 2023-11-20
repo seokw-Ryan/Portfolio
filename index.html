@@ -69,23 +69,29 @@
         font-family: "Nanum Myeongjo", cursive;
       }
 
-      div {
-        text-align: center;
-        margin-top: 60px;
+      .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* This makes the div take the full viewport height */
+        flex-direction: column;
+      }
+
+      .center h1,
+      .center h2 {
+        margin: 0; /* Remove default margins */
+        padding: 5px; /* Adjust padding as needed */
       }
     </style>
   </head>
 
   <body>
-    <div>
+    <div class="center">
       <h1>Ryan Chung</h1>
-    </div>
-    <div>
-      <p class="body-font"></p>
-    </div>
 
-    <h2 text-align="center">
-      <a href="./about.html" class="no-underline" id="white"> Continue</a>
-    </h2>
+      <h2>
+        <a href="./about.html" class="no-underline" id="white"> Continue</a>
+      </h2>
+    </div>
   </body>
 </html>
