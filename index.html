@@ -28,6 +28,12 @@
         margin-bottom: 20px;
       }
 
+      p {
+        font-size: 15px;
+        margin-top: 0px;
+        margin-bottom: 5px;
+      }
+
       /* Create a modern and simple design */
       /* Use a white background with black text */
       body {
@@ -54,10 +60,11 @@
 
       .center {
         display: flex;
-        justify-content: center;
+        justify-content: center; /* Keeps vertical centering */
         align-items: center;
-        height: 100vh; /* This makes the div take the full viewport height */
+        height: 100vh;
         flex-direction: column;
+        text-align: left; /* Aligns text to the right */
       }
     </style>
   </head>
@@ -65,7 +72,14 @@
   <body>
     <div class="center">
       <h1>Ryan Chung</h1>
-      <div>
+      <div class="container">
+        <p>2003.01.30</p>
+        <p>seokwoo.chung@cooper.edu</p>
+        <p>New York, NY</p>
+        <!-- <p>Seoul, South Korea</p> -->
+      </div>
+
+      <div class="container">
         <a href="./about.html">
           <button type="button" class="btn btn-success btn-sm">Continue</button>
         </a>
