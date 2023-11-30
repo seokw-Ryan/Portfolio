@@ -1,14 +1,24 @@
 <!-- FILEPATH: /C:/Users/seokw/OneDrive/Documents/GitHub/Portfolio/public/Hobby.html -->
 
 <!DOCTYPE html>
-<html>
+<html data-bs-theme="dark">
   <head>
     <title>My Hobbies</title>
     <style>
       .black {
         color: black;
       }
+
+      .container {
+        margin-bottom: 30px;
+      }
     </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <h1>My Hobbies</h1>
@@ -57,8 +67,17 @@
       <li>[Insert book title and author here]</li>
       <li>[Insert book title and author here]</li>
     </ol>
-    <footer>
-      <a href="../about.html" class="black">Back to About</a>
-    </footer>
+    <div class="container">
+      <a href="../about.html">
+        <button type="button" class="btn btn-success btn-sm">
+          Back to About
+        </button>
+      </a>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
